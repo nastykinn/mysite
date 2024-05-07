@@ -1,0 +1,64 @@
+/* Основные стили сайта */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f7f7;
+    color: #333;
+
+}
+h1 {
+    margin-top: 0; /* Уменьшаем верхний отступ до 0 */
+}
+.contact-icon {
+    width: 10px; /* Или другой размер, который вам подходит */
+    height: auto;
+    margin-bottom: 10px;
+}
+.main-banner {
+    position: relative; /* Для поддержки абсолютного позиционирования внутри */
+    overflow: hidden; /* Если изображение выходит за пределы, оно будет обрезано */
+}
+
+.banner-image {
+    position: absolute;
+    left: 0; /* Смещаем изображение влево */
+    top: 0; /* Смещаем изображение вверх */
+}
+/* Убираем паддинги у контейнера, если они есть */
+.container, .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+/* Стилизация навигационной панели */
+.navbar {
+    margin-bottom: 0; /* Убираем отступ снизу, если он есть */
+}
+
+header {
+    background-color: #263238; /* Темно-серый цвет для шапки */
+}
+
+nav .navbar-brand {
+    color: #cfd8dc; /* Светло-серый цвет для названия сайта */
+}
+
+nav .navbar-nav .nav-link {
+    color: #cfd8dc; /* Светло-серый цвет для ссылок навигации */
+}
+
+nav .navbar-nav .nav-link:hover {
+    color: #ffab00; /* Цвет акцента при наведении на ссылки навигации */
+}
+@media (min-width: 768px) {
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: calc(540px + 2rem); /* Исходная ширина col-md-4 плюс желаемое увеличение */
+    }
+}
+
+/* Стилизация футера */
+footer {
+    background-color: #263238;
+    color: #cfd8dc;
+}
+
